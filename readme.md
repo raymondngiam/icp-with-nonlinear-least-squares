@@ -6,8 +6,6 @@
 
 This project implements iterative closest point (ICP) algorithm with nonlinear least squares optimization on SE3 manifold using the `ceres-solver`, and `Sophus` library.
 
-
-
 ## Dataset
 
 3d model data used, `Stanford Bunny` was obtained from <a href='http://graphics.stanford.edu/data/3Dscanrep/'>Stanford University Computer Graphics Laboratory</a>.
@@ -24,7 +22,8 @@ This project implements iterative closest point (ICP) algorithm with nonlinear l
 ## How to build
 
 ```bash
-$ cd <project-root>
+$ git clone https://github.com/raymondngiam/ICP-bunny.git
+$ cd ICP-bunny
 $ mkdir build && cd build
 $ cmake ..
 $ make
@@ -210,6 +209,8 @@ $ make
 ---
 
 ## Implementation Details
+
+Full src: <a href='./main.cpp'>main.cpp</a>
 
 ### Sophus Representation of SE3 with Unit Quaternion and Vector
 

@@ -273,7 +273,8 @@ pre[data-line] .line-highlight[data-end]:after {
 </ol>
 <h2 class="mume-header" id="how-to-build">How to build</h2>
 
-<pre data-role="codeBlock" data-info="bash" class="language-bash">$ <span class="token builtin class-name">cd</span> <span class="token operator">&lt;</span>project-root<span class="token operator">&gt;</span>
+<pre data-role="codeBlock" data-info="bash" class="language-bash">$ <span class="token function">git</span> clone https://github.com/raymondngiam/ICP-bunny.git
+$ <span class="token builtin class-name">cd</span> ICP-bunny
 $ <span class="token function">mkdir</span> build <span class="token operator">&amp;&amp;</span> <span class="token builtin class-name">cd</span> build
 $ cmake <span class="token punctuation">..</span>
 $ <span class="token function">make</span>
@@ -448,6 +449,7 @@ tz      0.0000          -0.0000         0.0000
 <hr>
 <h2 class="mume-header" id="implementation-details">Implementation Details</h2>
 
+<p>Full src: <a href="./main.cpp">main.cpp</a></p>
 <h3 class="mume-header" id="sophus-representation-of-se3-with-unit-quaternion-and-vector">Sophus Representation of SE3 with Unit Quaternion and Vector</h3>
 
 <p>Rigid transformation of a point in homogeneous transformation matrix (HTM) take the following form,</p>
